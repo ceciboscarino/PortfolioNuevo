@@ -1,4 +1,5 @@
 
+import { Portfolio } from './pages/Portfolio'
 import './App.css'
 
 function App() {
@@ -6,11 +7,7 @@ function App() {
 
   return (
     <>
-      <div>
-        <p>hola</p>
-      </div>
-      
-        
+      <Portfolio/> 
     </>
   )
 }
