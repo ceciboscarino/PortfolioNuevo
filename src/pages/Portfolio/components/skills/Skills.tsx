@@ -6,6 +6,7 @@ function Skills() {
            <h1> 
            Skills 
            </h1> 
+          
 
         </SkillsContainer>
     )
