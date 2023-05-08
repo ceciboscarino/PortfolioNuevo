@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const AboutMeContainer = styled.div`
 
+padding-top: 100px;
 
 
 div{
@@ -11,6 +12,9 @@ div{
     flex-wrap: wrap-reverse;
     display : flex;
     flex-direction: row;
+    height: 900px;
+    
+    
     
 }
 

@@ -2,7 +2,7 @@ import { SkillsContainer } from ".";
 
 function Skills() {
     return (
-        <SkillsContainer>
+        <SkillsContainer id="skills">
            <h1> 
            Skills 
            </h1> 

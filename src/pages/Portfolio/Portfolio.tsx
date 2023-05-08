@@ -1,7 +1,15 @@
-import { Contact } from "./components/contact"
-import { AboutMe } from "./components/about-me"
-import { Skills } from "./components/skills"
+
+
 import { Wrapper } from "./wrapper/"
+import { lazy } from 'react'
+
+const AboutMe = lazy(() => import('./components/about-me/AboutMe'))
+const Skills = lazy(() => import('./components/skills/Skills'))
+const Contact = lazy(() => import('./components/contact/Contact'))
+
+
+
+
 
 function Portfolio() {
   return (
