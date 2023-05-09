@@ -15,8 +15,8 @@ function Portfolio() {
   return (
     <Wrapper>
        <AboutMe/>
-       <Skills/>
-       <Contact/>
+       {/* <Skills/> */}
+       {/* <Contact/> */}
     </Wrapper>
   )
 }

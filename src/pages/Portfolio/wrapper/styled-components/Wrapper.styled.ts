@@ -7,13 +7,14 @@ display: flex;
 
 
 align-items: center;
-padding: .4rem;
+padding: 3px;
 justify-content: space-between;
 box-shadow: var(--navbarShadow);
 width: 100%;
 position: fixed;
 top: 0;
 left: 0;
+max-height: 70px;
 z-index: 100;   
 /* background-color: var(--bg); */
 background-color: white;
@@ -21,7 +22,7 @@ background-color: white;
 
 h2{
     font-weight: 700;
-    font-size: 10 rem;
+  
     margin-left: 1%;
   
 }
@@ -68,6 +69,8 @@ a{
        
         @media (min-width: 768px) {
             position: initial;
+            flex-direction: column;
+            align-items: flex-start;
             margin: 0;
             a {
                 font-size: 1rem;
@@ -76,6 +79,23 @@ a{
 
         }
         
+
+    }
+    .links.active {
+        width: 100%;
+        display: block;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 100px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        
+        a{
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
     }
 
     .switch {
@@ -83,6 +103,11 @@ a{
         border: none;
         cursor: pointer;
         margin-right: 1%;
+    }
+    .burguer {
+        @media (min-width: 768px) {
+            display: none;
+         }
     }
 `;
 
