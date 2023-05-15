@@ -7,8 +7,9 @@ import BurguerButton from './../../../components/BurgerButton/BurgerButton';
 
 interface Props {
     children: JSX.Element | JSX.Element[];
+    titulo?: string;
 }
-export default function Wrapper({children}: Props) {
+export default function Wrapper({children, titulo} : Props) {
     const allElements = document.querySelectorAll("*");
     
     const [colorScheme, setColorScheme] = useState<string>(ColorSchemeActive())
@@ -59,7 +60,7 @@ export default function Wrapper({children}: Props) {
         <WrapperNavBar>
             
                 <h2>
-                    Cachorra
+                    {titulo}
                 </h2>
                 <div className={`links ${clicked ? 'active' : ''}`}>
                     <a href="#aboutme" onClick={handleClickLink}>About me</a>
