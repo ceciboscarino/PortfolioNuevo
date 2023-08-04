@@ -7,7 +7,7 @@ display: flex;
 
 
 align-items: center;
-padding: 3px;
+padding: 6px;
 justify-content: space-between;
 box-shadow: var(--navbarShadow);
 width: 100%;
@@ -17,7 +17,8 @@ left: 0;
 max-height: 70px;
 z-index: 100;   
 /* background-color: var(--bg); */
-background-color: white;
+ background-color: white ;
+ justify-content: center;
 
 
 h2{
@@ -31,7 +32,7 @@ a{
     text-decoration: none;
     
     color: black;
-    ;
+    
 
 }
 .links {
@@ -46,6 +47,7 @@ a{
         transition: all .5s ease;
         cursor: pointer;
         
+        
        
         a {
             display: block;
@@ -53,11 +55,13 @@ a{
             //border-bottom: solid 2px transparent;
             margin: 8px;
             font-weight: 500;
+            
         
             &:hover {
                 //border-bottom: solid 2px #222;
-                color: white;
+                color: var(--main-color);
                 background-color: grey;
+
                 padding: 5px;
                 margin: 3px;
 
@@ -70,7 +74,7 @@ a{
         @media (min-width: 768px) {
             position: initial;
             flex-direction: column;
-            align-items: flex-start;
+           
             margin: 0;
             a {
                 font-size: 1rem;
@@ -99,15 +103,37 @@ a{
     }
 
     .switch {
-        background-color: transparent;
+        background-color: var(--main-color);
         border: none;
         cursor: pointer;
-        margin-right: 1%;
+              
     }
-    .burguer {
+    /* .burguer {
         @media (min-width: 768px) {
             display: none;
          }
-    }
+    } */
 `;
 
+export const BgDiv = styled.div `
+position: absolute;
+background-color: var(--main-color);
+top: -100px;
+left: 100%;
+right: -3000;
+width: 0;
+height: 100%;
+z-index: 4;
+transition: all .6s ease;
+
+&.active {
+    border-radius: 0 0 0 0;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 175vh;
+    max-width: 250px;
+    transform: translateX(-250px);
+    
+}
+`
