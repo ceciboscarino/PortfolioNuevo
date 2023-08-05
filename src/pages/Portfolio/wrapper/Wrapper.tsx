@@ -15,16 +15,18 @@ export default function Wrapper({ children }: Props) {
   const [colorScheme, setColorScheme] = useState<string>(ColorSchemeActive())
 
   const [clicked, setClicked] = useState<boolean>(false)
+  setClicked(false)
 
-  const handleClick = () => {
-    setClicked(!clicked)
-    // const body = document.querySelector('body')?.setAttribute('style', `overflow-y: ${clicked ? 'auto' : 'hidden'}`)
-    window.scrollTo({ behavior: 'smooth' });
 
-  }
-  const handleClickLink = () => {
-    setClicked(!clicked)
-  }
+  // const handleClick = () => {
+  //   setClicked(!clicked)
+  //   // const body = document.querySelector('body')?.setAttribute('style', `overflow-y: ${clicked ? 'auto' : 'hidden'}`)
+  //   window.scrollTo({ behavior: 'smooth' });
+
+  // }
+  // const handleClickLink = () => {
+  //   setClicked(!clicked)
+  // }
 
   const scrollToTop = () => {
     window.scrollTo({

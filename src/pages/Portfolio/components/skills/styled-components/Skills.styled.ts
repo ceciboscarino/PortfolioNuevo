@@ -49,7 +49,7 @@ transition: all 0.5s ease;
     justify-content: center;
     bottom: 0;
     margin-bottom: -80px;
-    media (min-width: 800px) {
+    @media(min-width:800px) {
         justify-content: flex-start;  
 }
     
@@ -74,9 +74,9 @@ p{
     padding-bottom: 50px;
     width: 100%;
     height: auto;
-    media (min-width: 800px){
-
-    width: 94%;
+  
+    @media(min-width:800px){
+     width: 94%;
     height: auto;
     padding-bottom: 50px;
     margin-left: 400px;
