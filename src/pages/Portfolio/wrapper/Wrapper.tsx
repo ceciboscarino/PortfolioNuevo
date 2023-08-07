@@ -18,15 +18,6 @@ export default function Wrapper({ children }: Props) {
   setClicked(false)
 
 
-  // const handleClick = () => {
-  //   setClicked(!clicked)
-  //   // const body = document.querySelector('body')?.setAttribute('style', `overflow-y: ${clicked ? 'auto' : 'hidden'}`)
-  //   window.scrollTo({ behavior: 'smooth' });
-
-  // }
-  // const handleClickLink = () => {
-  //   setClicked(!clicked)
-  // }
 
   const scrollToTop = () => {
     window.scrollTo({
