@@ -12,6 +12,7 @@ function App() {
       <Suspense fallback={<div>Cargando</div>} >
 
         <Portfolio />
+        
       </Suspense>
     </>
   )
