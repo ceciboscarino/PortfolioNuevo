@@ -71,7 +71,7 @@ a{
             }
         }
        
-        @media (min-width: 768px) {
+        @media(min-width: 768px) {
             position: initial;
             flex-direction: column;
            
@@ -108,11 +108,7 @@ a{
         cursor: pointer;
               
     }
-    /* .burguer {
-        @media (min-width: 768px) {
-            display: none;
-         }
-    } */
+  
 `;
 
 export const BgDiv = styled.div `

@@ -12,12 +12,13 @@ export default function Circle({ percentage, style, skill }: circletype) {
 
 
     const [perc, setPerc] = useState(0)
-    setPerc(percentage)
-
     
 
 
+
+
     useEffect(() => {
+        setPerc(percentage)
         let number: HTMLElement | null = document.getElementById("number");
         let counter = 0;
         setInterval(() => {

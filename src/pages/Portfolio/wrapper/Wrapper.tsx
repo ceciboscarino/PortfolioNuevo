@@ -15,7 +15,6 @@ export default function Wrapper({ children }: Props) {
   const [colorScheme, setColorScheme] = useState<string>(ColorSchemeActive())
 
   const [clicked, setClicked] = useState<boolean>(false)
-  setClicked(false)
 
 
 
@@ -56,9 +55,7 @@ export default function Wrapper({ children }: Props) {
   return (
     <>
       <WrapperNavBar>
-        <button id="switch" className="switch" onClick={handleClickTheme}>
-          {colorScheme === 'dark' ? <SunFill size={25} /> : <MoonFill size={25} />}
-        </button>
+        
 
         {/* <a onClick={scrollToTop}>
           <img src={"/logopd.svg"} alt="" id="logoGrande" />

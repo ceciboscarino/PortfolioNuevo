@@ -9,7 +9,7 @@ function App() {
   return (
 
     <>
-      <Suspense fallback={<div>Cargando</div>} >
+      <Suspense fallback={<div>Loading</div>} >
 
         <Portfolio />
         

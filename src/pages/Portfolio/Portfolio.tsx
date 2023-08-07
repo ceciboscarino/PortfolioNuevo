@@ -15,13 +15,16 @@ const Footer = lazy(() => import('./components/footer/Footer'));
 
 function Portfolio() {
   return (
+    
+
     <Wrapper >
 
-       <AboutMe/>
+      <AboutMe/>
        <Skills/>
        <Contact/>
-       <Footer/>
+       <Footer/> 
     </Wrapper>
-  )
+    )
+
 }
 export default Portfolio
