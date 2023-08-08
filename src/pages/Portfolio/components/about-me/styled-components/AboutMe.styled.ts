@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const AboutMeContainer = styled.div`
 
 
-
+ padding-top: 30px;
 height: auto;
 width: 100%;
 transition: all 1s ease-in;
@@ -14,6 +14,7 @@ transition: all 0.5s ease;
 
 &&:hover {
   background:  #E6E6E6;}
+
 }
 
 
@@ -22,10 +23,11 @@ transition: all 0.5s ease;
     height: auto;
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    
     @media (min-width: 800px) {
     justify-content: flex-end;
-    width: 97%;
+    width: 99%;
+    
 }
     
 }
@@ -33,20 +35,21 @@ transition: all 0.5s ease;
 h1{
     font-family: "Red Hat Mono Bold";
     color: var(--main-color);
-    position: absolute;
-    top: 0;
-    font-size: 150px;
-    margin-top: -20px;
+    font-size: 10vw;
+    margin-top: 10px;
     opacity: 60%;
-    
-    
+    margin-bottom: 0px;
+    @media (min-width: 1000px){
+        
+        margin-top: -20px;
+    }
 }
 
 p{
     text-align: justify;
     width: 90%;
     @media (min-width: 800px) {
-    flex-direction: row;  
+    
     width: 40%; 
     color: #666666;
 }
@@ -61,11 +64,12 @@ div{
     display : flex;
     flex-direction: column;
     z-index: 1;
-    padding: 5px;
+    padding: 0px;
     @media (min-width: 800px) {
     flex-direction: row;   
     justify-content: space-around;
-    padding: 25px;
+    width: 100%;
+    padding: 5px;
 }
     
 }
@@ -80,7 +84,7 @@ width: 70%;
 height: auto;
 @media (min-width: 800px) {
     width: 37%;  
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 

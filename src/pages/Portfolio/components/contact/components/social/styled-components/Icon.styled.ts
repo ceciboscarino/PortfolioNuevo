@@ -17,28 +17,35 @@ ul{
 }
 
 li{
-    height: 100px;
-    width:100px ;
+    height: 60px;
+    width:60px ;
     border: 2px solid #eeb53a;
-    margin: 0 35px;
+    margin: 0 25px;
     border-radius: 50%;
     cursor: pointer;
+    @media(min-width:1000px) {
+        height: 100px;
+    width:100px ; 
+    margin: 0 35px;
     
-}
+}}
 li:hover{
     background:var(--main-color);
 }
 a{
-    line-height: 100px;
-    font-size: 50px;
+    line-height: 60px;
+    font-size: 30px;
     color: #eeb53a;
+    @media(min-width:1000px) {
+        line-height: 100px;
+    font-size: 50px; 
 }
 li:hover a{
 
     color: #666666;
 }
 
-
+}
 
 
 `

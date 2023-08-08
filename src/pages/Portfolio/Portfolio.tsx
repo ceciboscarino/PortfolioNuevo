@@ -18,8 +18,7 @@ function Portfolio() {
     
 
     <Wrapper >
-
-      <AboutMe/>
+       <AboutMe/>
        <Skills/>
        <Contact/>
        <Footer/> 

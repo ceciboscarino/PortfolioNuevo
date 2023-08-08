@@ -5,16 +5,8 @@ import { ContactContainer } from "./styled-components";
 function Contact() {
     return (
         <ContactContainer id="contact">
-
-           
              <h1>Contact</h1>
-            
-           
             <Icons/>
-          
-            
-
-            </ContactContainer>)
-
+        </ContactContainer>)
 }
-            export default Contact
+export default Contact

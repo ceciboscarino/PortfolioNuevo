@@ -14,9 +14,12 @@ h1{
     font-family: "Red Hat Mono Bold";
     color: var(--main-color);
     top: 0;
-    font-size: 150px;
-margin-top:-57px;
+    font-size: 10vw;
+margin-top:-10px;
     opacity: 70%;
+    @media (min-width: 1000px){
+        margin-top: -45px; 
+    }
 }
 
 
