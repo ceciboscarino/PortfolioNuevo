@@ -2,12 +2,15 @@ import styled from 'styled-components'
 
 export const IconContainer = styled.div`
 
-display: grid;
+display: flex;
 height: 100%;
 margin-top: 0;
 place-items: center;
 text-align: center;
 margin-bottom: 50px;
+margin-left: -40px;
+@media(min-width:1000px) {
+    margin-left: 0px;}
 
 
 ul{
@@ -20,7 +23,7 @@ li{
     height: 60px;
     width:60px ;
     border: 2px solid #eeb53a;
-    margin: 0 25px;
+    margin: 0 15px;
     border-radius: 50%;
     cursor: pointer;
     @media(min-width:1000px) {
