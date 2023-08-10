@@ -4,13 +4,24 @@ import { ButtonContainer } from ".";
 
 
 
-function Button () {
-    return(
+function Button() {
+    return (
         <ButtonContainer>
-            <a href="https://puntodamia.com.ar/"  target="_blank" className="button"> 
-            <p className="button-title">My first project  {'>'}  </p>
-            <div className="button-img-body"></div>
-            {/* <img src="Img\arrow-right.svg" alt="" className="button-img"></img> */}
+            <a href="/CeciliaBoscarino.pdf" download="CeciliaBoscarino.pdf" className="button">
+                <p className="button-title">Resume  {'>'}  </p>
+                <div className="button-img-body"></div>
+
+            </a>
+            <a href="https://puntodamia.com.ar/" target="_blank" className="buttonorange">
+                <p className="button-title">My first project  {'>'}  </p>
+                <div className="button-img-body"></div>
+
+
+            </a>
+            <a href="/PortfolioDesign.pdf" download="PortfolioDesign.pdf" className="button">
+                <p className="button-title">Design Portfolio {'>'}  </p>
+                <div className="button-img-body"></div>
+
 
             </a>
         </ButtonContainer>
